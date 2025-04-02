@@ -1,0 +1,647 @@
+==1345== Memcheck, a memory error detector
+==1345== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==1345== Using Valgrind-3.23.0 and LibVEX; rerun with -h for copyright info
+==1345== Command: ./mathlib
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10CAFE: forward_matrix (matrix.c:573)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C75E: matrix_cross (matrix.c:525)
+==1345==    by 0x10CCF4: right_matrix (matrix.c:593)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C78A: matrix_cross (matrix.c:527)
+==1345==    by 0x10CCF4: right_matrix (matrix.c:593)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10CD6C: right_matrix (matrix.c:595)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C75E: matrix_cross (matrix.c:525)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C78A: matrix_cross (matrix.c:527)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C7BA: matrix_cross (matrix.c:529)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D1B2: create_view_matrix (matrix.c:643)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D21A: create_view_matrix (matrix.c:646)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D27F: create_view_matrix (matrix.c:649)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DE66: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEA0: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEB4: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEEE: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Use of uninitialised value of size 8
+==1345==    at 0x10DFE8: draw_pixel (render.c:53)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E021: draw_line (render.c:62)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E048: draw_line (render.c:64)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DE66: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEA0: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEB4: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1DB: draw_line (render.c:69)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1F3: draw_line (render.c:71)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E207: draw_line (render.c:72)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1E3: draw_line (render.c:69)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== More than 10000000 total errors detected.  I'm not reporting any more.
+==1345== Final error counts will be inaccurate.  Go fix your program!
+==1345== Rerun with --error-limit=no to disable this cutoff.  Note
+==1345== that errors may occur in your program without prior warning from
+==1345== Valgrind, because errors are no longer being displayed.
+==1345== 
+==1345== 
+==1345== Process terminating with default action of signal 2 (SIGINT)
+==1345==    at 0x10E1CE: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345== 
+==1345== HEAP SUMMARY:
+==1345==     in use at exit: 3,424 bytes in 59 blocks
+==1345==   total heap usage: 105 allocs, 46 frees, 4,888 bytes allocated
+==1345== 
+==1345== 32 bytes in 1 blocks are definitely lost in loss record 17 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AA67: scalar_mult (matrix.c:95)
+==1345==    by 0x10D1B2: create_view_matrix (matrix.c:643)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345== 
+==1345== 32 bytes in 1 blocks are definitely lost in loss record 18 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AA67: scalar_mult (matrix.c:95)
+==1345==    by 0x10D21A: create_view_matrix (matrix.c:646)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345== 
+==1345== 32 bytes in 1 blocks are definitely lost in loss record 19 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AA67: scalar_mult (matrix.c:95)
+==1345==    by 0x10D27F: create_view_matrix (matrix.c:649)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345== 
+==1345== 128 bytes in 1 blocks are definitely lost in loss record 26 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AFD3: matrix_mult (matrix.c:165)
+==1345==    by 0x10C4F4: transformation (matrix.c:495)
+==1345==    by 0x109B75: main (main.c:73)
+==1345== 
+==1345== 128 bytes in 1 blocks are definitely lost in loss record 27 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AFD3: matrix_mult (matrix.c:165)
+==1345==    by 0x10C523: transformation (matrix.c:496)
+==1345==    by 0x109B75: main (main.c:73)
+==1345== 
+==1345== 256 bytes in 8 blocks are definitely lost in loss record 28 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AFD3: matrix_mult (matrix.c:165)
+==1345==    by 0x10DBE0: transform_vertices (render.c:30)
+==1345==    by 0x109CBB: main (main.c:78)
+==1345== 
+==1345== 256 bytes in 8 blocks are definitely lost in loss record 29 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AFD3: matrix_mult (matrix.c:165)
+==1345==    by 0x10DC1E: transform_vertices (render.c:31)
+==1345==    by 0x109CBB: main (main.c:78)
+==1345== 
+==1345== 256 bytes in 8 blocks are definitely lost in loss record 30 of 31
+==1345==    at 0x4842788: malloc (vg_replace_malloc.c:446)
+==1345==    by 0x10A6A1: create_matrix (matrix.c:11)
+==1345==    by 0x10AFD3: matrix_mult (matrix.c:165)
+==1345==    by 0x10DC5C: transform_vertices (render.c:32)
+==1345==    by 0x109CBB: main (main.c:78)
+==1345== 
+==1345== LEAK SUMMARY:
+==1345==    definitely lost: 1,120 bytes in 29 blocks
+==1345==    indirectly lost: 0 bytes in 0 blocks
+==1345==      possibly lost: 0 bytes in 0 blocks
+==1345==    still reachable: 2,304 bytes in 30 blocks
+==1345==         suppressed: 0 bytes in 0 blocks
+==1345== Reachable blocks (those to which a pointer was found) are not shown.
+==1345== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1345== 
+==1345== ERROR SUMMARY: 10000008 errors from 41 contexts (suppressed: 0 from 0)
+==1345== 
+==1345== 1 errors in context 1 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1E3: draw_line (render.c:69)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 2 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E048: draw_line (render.c:64)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 3 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E021: draw_line (render.c:62)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 4 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 5 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 6 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D27F: create_view_matrix (matrix.c:649)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 7 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D21A: create_view_matrix (matrix.c:646)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 8 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10D1B2: create_view_matrix (matrix.c:643)
+==1345==    by 0x1098EF: main (main.c:66)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 9 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C7BA: matrix_cross (matrix.c:529)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 10 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C78A: matrix_cross (matrix.c:527)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 11 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C75E: matrix_cross (matrix.c:525)
+==1345==    by 0x10CF62: up_matrix (matrix.c:614)
+==1345==    by 0x109897: main (main.c:65)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 12 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1 errors in context 13 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C78A: matrix_cross (matrix.c:527)
+==1345==    by 0x10CCF4: right_matrix (matrix.c:593)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 14 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10C75E: matrix_cross (matrix.c:525)
+==1345==    by 0x10CCF4: right_matrix (matrix.c:593)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 15 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 1 errors in context 16 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D7CE: sqrt_approx (alg.c:36)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 2 errors in context 17 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D85E: sqrt_approx (alg.c:43)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 3 errors in context 18 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10CD6C: right_matrix (matrix.c:595)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 3 errors in context 19 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10AB0F: scalar_mult (matrix.c:100)
+==1345==    by 0x10CAFE: forward_matrix (matrix.c:573)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 5 errors in context 20 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10AA23: homo_magnitude (matrix.c:87)
+==1345==    by 0x10CD2D: right_matrix (matrix.c:594)
+==1345==    by 0x10984D: main (main.c:64)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 6 errors in context 21 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10CAC2: forward_matrix (matrix.c:572)
+==1345==    by 0x109803: main (main.c:63)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 7 errors in context 22 of 41:
+==1345== Use of uninitialised value of size 8
+==1345==    at 0x10DFE8: draw_pixel (render.c:53)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 7 errors in context 23 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEEE: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 7 errors in context 24 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEB4: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 7 errors in context 25 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEA0: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 7 errors in context 26 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10D835: sqrt_approx (alg.c:43)
+==1345==    by 0x10A9A6: matrix_magnitude (matrix.c:75)
+==1345==    by 0x10C0B6: matrix_normalize (matrix.c:443)
+==1345==    by 0x10C1FC: create_rotation_matrix (matrix.c:460)
+==1345==    by 0x109B27: main (main.c:72)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A930: matrix_magnitude (matrix.c:67)
+==1345== 
+==1345== 
+==1345== 8 errors in context 27 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DE66: draw_pixel (render.c:51)
+==1345==    by 0x10E417: draw_cube (render.c:83)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 864 errors in context 28 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEB4: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1999811 errors in context 29 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E207: draw_line (render.c:72)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1999811 errors in context 30 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1F3: draw_line (render.c:71)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1999812 errors in context 31 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10E1DB: draw_line (render.c:69)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1999812 errors in context 32 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DEA0: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== 
+==1345== 1999812 errors in context 33 of 41:
+==1345== Conditional jump or move depends on uninitialised value(s)
+==1345==    at 0x10DE66: draw_pixel (render.c:51)
+==1345==    by 0x10E1CD: draw_line (render.c:68)
+==1345==    by 0x10E6BD: draw_cube (render.c:91)
+==1345==    by 0x109E17: main (main.c:80)
+==1345==  Uninitialised value was created by a stack allocation
+==1345==    at 0x10A9A9: homo_magnitude (matrix.c:79)
+==1345== 
+==1345== ERROR SUMMARY: 10000008 errors from 41 contexts (suppressed: 0 from 0)
