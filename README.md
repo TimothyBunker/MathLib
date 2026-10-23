@@ -1,10 +1,10 @@
-# C Framebuffer Graphics Engine
+# MathLib
 
 ## Project Description
 
 This project is a low-level graphics rendering engine implemented in C. It provides a foundation for 2D and 3D graphics by combining a custom-built linear algebra library with direct framebuffer manipulation on Linux systems.  The engine bypasses higher-level graphics APIs, allowing for a direct understanding of the graphics pipeline from mathematical transformations to pixel-level rendering.
 
-This project serves as a learning exercise and a demonstration of core graphics programming principles. It's designed to be lightweight, with minimal external dependencies, making it potentially suitable for educational purposes or resource-constrained environments.
+This is a learning project for linear algebra and basic framebuffer rendering.
 
 ## Features
 
@@ -33,8 +33,8 @@ This project serves as a learning exercise and a demonstration of core graphics 
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <YOUR_GITHUB_REPO_LINK_HERE> # <<< Replace with your repo link
-    cd <your-repository-directory>
+    git clone https://github.com/TimothyBunker/MathLib.git
+    cd MathLib
     ```
 
 2.  **Compile the Code:**
